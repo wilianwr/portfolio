@@ -197,18 +197,29 @@ header {
 .container-skills {
   background-color: #000000;
   width: 100vw;
-  height: 70vh;
-  background-color: ;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
+.container-skills p {
+  margin-top: 10%;
+  color: var(--color-white);
+}
+
+.container-skills h2 {
+  font-family: var(--font-title);
+  margin-bottom: 10%;
+  color: var(--color-principal);
+}
+
 .skills {
   max-width: 800px;
   margin: auto;
-  width: 100%;
+  margin-bottom: 10%;
+  width: 100vw;
   height: 100%;
   display: flex;
   align-items: center;
@@ -221,13 +232,35 @@ header {
   height: 80%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   color: var(--color-white);
+  border-radius: 10px;
 }
 
 .front-end h3 {
+  font-size: 1.2rem;
+  font-family: var(--font-title);
+  margin-top: 10%;
   color: var(--color-principal);
+}
+
+.front-end ul {
+  margin-bottom: 20%;
+}
+
+.front-end ul li {
+  text-decoration: none;
+  columns: 2;
+  list-style-position: inside;
+  list-style: none;
+  font-size: 1.1rem;
+  margin-top: 1.25rem;
+}
+
+.nivel {
+  color: #757474;
+  font-size: 1rem;
 }
 
 .back-end {
@@ -236,15 +269,31 @@ header {
   height: 80%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
   color: var(--color-white);
+  border-radius: 10px;
 }
 
 .back-end h3 {
+  font-size: 1.2rem;
+  font-family: var(--font-title);
   color: var(--color-principal);
+  margin-top: 10%;
 }
 
+.back-end ul {
+  margin-bottom: 65%;
+}
+
+.back-end ul li {
+  text-decoration: none;
+  columns: 2;
+  margin-top: 1.25rem;
+  list-style-position: inside;
+  list-style: none;
+  font-size: 1.1rem;
+}
 
 /*======================Projetos================*/
 
@@ -446,6 +495,34 @@ header {
 /*====================@Media=====================*/
 
 @media only screen and (max-width: 750px) {
+
+  .logo {
+    font-size: 1.6em;
+    font-family: var(--font-title);
+    font-weight: 600;
+    color: var(--color-principal);
+  
+    transform: translatey(-20px);
+    opacity: 0;
+  }
+  
+  .nav {
+    transform: translatey(-10px);
+    opacity: 0;
+  }
+ 
+  .animar {
+    
+  }
+
+  @keyframes slide {
+    to {
+      opacity: 1;
+      transform: translateY(10px);
+    }
+  }
+  
+
   .sobre {
     flex-direction: column;
     height: 100%;
@@ -463,12 +540,30 @@ header {
   .right-box {
     width: 100%;
     height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .me {
     margin-top: 2.5rem;
-    height: 70%;
-    width: 100%;
+    height: 80%;
+    width: 80%;
+  }
+
+  /*====================Skills===============*/
+
+  .container-skills {
+    height: 100%;
+  }
+
+  .skills {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .front-end {
+    margin-bottom: 10%;
   }
 
   /*==================Projetos====================*/
@@ -499,8 +594,63 @@ header {
   }
 }
 
+@media only screen and (max-width: 670px) {
+  /*====================Skills===============*/
+
+  .skills {
+    flex-direction: column;
+    height: 100%;
+    width: 45vw;
+  }
+
+  .front-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .front-end h3 {
+    font-size: 1rem;
+  }
+
+  .front-end ul li {
+    font-size: 1rem;
+    columns: 1;
+    text-align: center;
+  }
+
+  .back-end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .back-end h3 {
+    font-size: 1rem;
+  }
+
+  .back-end ul li {
+    font-size: 1rem;
+    columns: 1;
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 500px) {
   .group01 {
+    width: 100%;
+    height: 100%;
+  }
+
+  /*==============Skills========================*/
+  .skills {
+    max-width: 800px;
+    width: 80vw;
+  }
+
+  .front-end {
     width: 100%;
     height: 100%;
   }
