@@ -495,7 +495,7 @@ header {
 /*====================@Media=====================*/
 
 @media only screen and (max-width: 750px) {
-
+  
   .logo {
     font-size: 1.6em;
     font-family: var(--font-title);
