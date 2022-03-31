@@ -205,14 +205,17 @@ header {
 }
 
 .container-skills p {
-  margin-top: 10%;
   color: var(--color-white);
 }
 
 .container-skills h2 {
   font-family: var(--font-title);
-  margin-bottom: 10%;
   color: var(--color-principal);
+}
+
+.title-skills {
+  margin-top: 10%;
+  margin-bottom: 10%;
 }
 
 .skills {
