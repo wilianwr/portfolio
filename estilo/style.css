@@ -35,13 +35,13 @@ a {
 .container-top {
   background-color: #222222;
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 header {
   margin: auto;
   width: 100%;
-  height: 10%;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -116,7 +116,7 @@ header {
   margin: auto;
   max-width: 800px;
   width: 100vw;
-  height: 80%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -165,8 +165,8 @@ header {
 }
 
 .me {
-  max-width: 350px;
-  width: 70%;
+  margin: auto;
+  width: 50%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -510,10 +510,6 @@ header {
     transform: translatey(-10px);
     opacity: 0;
   }
- 
-  .animar {
-    
-  }
 
   @keyframes slide {
     to {
@@ -522,23 +518,33 @@ header {
     }
   }
   
-
-  .sobre {
-    flex-direction: column;
+  .container-top {
     height: 100%;
     width: 100%;
   }
 
+  .sobre {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+  }
+
   .left-box {
-    margin-top: 6.25rem;
     width: 100%;
     height: 50%;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    margin: auto;
+    margin-top: 6rem;
+  }
+
+  .left-box h1 {
+    font-size: 2rem;
   }
 
   .right-box {
-    width: 100%;
+    width: 60vw;
     height: 50%;
     display: flex;
     align-items: center;
@@ -546,9 +552,9 @@ header {
   }
 
   .me {
-    margin-top: 2.5rem;
-    height: 80%;
-    width: 80%;
+    margin-bottom: 2rem;
+    height: 40vh;
+    width: 40vw;
   }
 
   /*====================Skills===============*/
@@ -597,6 +603,11 @@ header {
 @media only screen and (max-width: 670px) {
   /*====================Skills===============*/
 
+  .me {
+    height: 50vh;
+    width: 50vw;
+  }
+
   .skills {
     flex-direction: column;
     height: 100%;
@@ -639,6 +650,12 @@ header {
 }
 
 @media only screen and (max-width: 500px) {
+
+  .me {
+    height: 100%;
+    width: 60%;
+  }
+
   .group01 {
     width: 100%;
     height: 100%;
@@ -648,11 +665,25 @@ header {
   .skills {
     max-width: 800px;
     width: 80vw;
+    height: 100%;
+    margin: 4rem 0 7rem 0;
+  }
+
+  .title-skills  {
+    margin-top: 4rem;
   }
 
   .front-end {
     width: 100%;
     height: 100%;
+  }
+
+  .group01 {
+    margin-top: 3rem;
+  }
+
+  .container-middle h2 {
+    margin-top: 4rem;
   }
 }
 
@@ -661,17 +692,27 @@ header {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    height: 6rem;
+    height: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  .logo {
+    padding: .5rem;
+  }
+
+  .left-box h1 {
+    font-size: 2rem;
+  }
+
+  .nome {
+    text-align: center;
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 380px) {
-  .sobre h1 {
-    font-size: 2.5em;
-  }
 
   .footer h1 {
     font-size: 1.6rem;
