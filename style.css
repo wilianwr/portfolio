@@ -655,8 +655,10 @@ header {
 @media only screen and (max-width: 500px) {
 
   .me {
+    max-width: 300px;
+    max-height: 300px;
     height: 100%;
-    width: 60%;
+    width: 100%;
   }
 
   .group01 {
